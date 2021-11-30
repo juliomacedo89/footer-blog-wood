@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 0.87rem;
+  line-height: 1.25rem;
+  color: #595959;
+}
+.newsletter {
+  max-width: 1920px;
+  width: 100%;
+  margin: 20px auto 0 auto;
+  border: 1px solid #008000;
+}
+.newsletter__container {
+  max-width: 100%;
+  background-color: #232323;
+  height: 282px;
+}
+.footer {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto 20px auto;
+  border: 1px solid #008000;
+}
+.footer__container {
+  display: flex;
+  max-width: 1720px;
+  width: 100%;
+  margin: 96px auto 0 auto;
+}
+.footer__container-aboutus {
+  max-width: 430px;
+  width: 100%;
+  margin-bottom: 60px;
+}
+.footer__container .up ul {
+  margin-bottom: 16px;
+}
+.footer__container .vetor-center {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+.footer__container .text-small {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+}
+.footer__container-ambience {
+  max-width: 430px;
+  width: 100%;
+}
+.footer__container-blog {
+  max-width: 430px;
+  width: 100%;
+}
+.footer__container-social {
+  max-width: 430px;
+  width: 100%;
+}
+.footer__container-social ul {
+  display: flex;
+  max-width: 332px;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+.footer__container-social ul li {
+  margin: 0;
+  list-style: none;
+}
+.footer__container-social ul li a {
+  display: flex;
+}
+.footer__container-social ul li a svg {
+  box-shadow: 0px 0px 0px 0px #fff;
+  transition: box-shadow 0.18s linear;
+}
+.footer__container-social ul li a svg:hover {
+  box-shadow: 0px 0px 0px 0.8px #fff;
+}
+.footer__container-social button {
+  max-width: 256px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px 32px;
+  background-color: #232323;
+  border: 1px solid #232323;
+  font-family: Poppins;
+  font-style: normal;
+  font-weigh: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  cursor: pointer;
+  transition: 200ms all ease-in-out;
+}
+.footer__container-social button:hover {
+  background-color: #fff;
+  color: #232323;
+}
+.footer__container h2 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 16px;
+  color: #232323;
+}
+.footer__container li {
+  margin: 8px 0;
+  list-style: none;
+}
+.footer__container a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: justify;
+  text-decoration: none;
+  color: #595959;
+}
+.footer__copy {
+  max-width: 1720px;
+  width: 100%;
+  margin: 0 auto 107px auto;
+}
+.footer__copy p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+}
+.footer__copy p a {
+  text-decoration: none;
+}
+@media only screen and (min-width: 1720px) {
+  .footer {
+    padding: 0 15px;
+  }
+}
+@media only screen and (min-width: 1366px) and (max-width: 1719px) {
+  .footer {
+    padding: 0 15px;
+  }
+}
+@media only screen and (min-width: 1280px) and (max-width: 1365px) {
+  .footer {
+    padding: 0 15px;
+  }
+  .footer__container-ambience h2 {
+    width: 250px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1279px) {
+  .footer {
+    padding: 0 15px;
+  }
+  .footer__container-ambience h2 {
+    width: 250px;
+  }
+}
+@media only screen and (min-width: 900px) and (max-width: 1199px) {
+  .footer {
+    padding: 0 15px;
+  }
+  .footer__container {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .footer__container-aboutus {
+    margin-bottom: 20px;
+  }
+  .footer__container-aboutus .up {
+    margin-bottom: 20px;
+  }
+  .footer__container-aboutus .up .vetor-center {
+    display: flex;
+    justify-content: center;
+  }
+  .footer__copy {
+    text-align: center;
+    margin-top: 60px;
+    max-width: 860px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 899px) {
+  .footer {
+    padding: 0 15px;
+  }
+  .footer__container {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .footer__container-aboutus {
+    margin-bottom: 20px;
+    max-width: 450px;
+  }
+  .footer__container-aboutus .up {
+    margin-bottom: 20px;
+  }
+  .footer__container-aboutus .vetor-center {
+    display: flex;
+    justify-content: center;
+  }
+  .footer__container-ambience {
+    margin-bottom: 20px;
+    max-width: 450px;
+  }
+  .footer__container-blog {
+    margin-bottom: 20px;
+    max-width: 450px;
+  }
+  .footer__container-social {
+    max-width: 450px;
+  }
+  .footer__container-social ul {
+    margin: 16px auto 32px auto;
+  }
+  .footer__copy {
+    text-align: center;
+    margin-top: 60px;
+    max-width: 450px;
+  }
+}
