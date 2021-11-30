@@ -1,0 +1,268 @@
+*
+      margin 0
+      padding 0
+
+      box-sizing border-box
+
+      font-family 'Poppins', sans-serif
+      font-weight 400
+      font-size 0.87rem
+      line-height 1.25rem
+
+      color #595959
+
+//section somente para visualização de layout
+.newsletter
+      max-width 1920px
+      width 100%
+
+      margin 20px auto 0 auto
+      
+      border 1px solid green
+
+      &__container
+            max-width 100%
+            background-color #232323
+            height 282px
+      
+.footer
+
+      max-width 1920px
+      width 100%
+
+      margin 0 auto 20px auto //no final, deixar com margin 0 auto (está assim para visualização)
+      
+      border 1px solid green
+
+      &__container 
+            display flex
+
+            max-width 1720px
+            width 100%
+
+            margin 96px auto 0 auto
+ 
+            &-aboutus
+                  max-width 430px
+                  width 100%
+
+                  margin-bottom 60px
+
+            .up 
+                  ul 
+                        margin-bottom 16px
+
+            .vetor-center
+                  display flex
+
+                  align-items center
+                  gap 3px
+            
+            .text-small 
+                  font-style normal
+                  font-weight normal
+                  font-size 12px
+                  line-height 20px
+
+            &-ambience
+                  max-width 430px
+                  width 100%
+
+            &-blog
+                  max-width 430px
+                  width 100%
+
+            &-social
+                  max-width 430px
+                  width 100%
+
+                  ul 
+                        display flex
+                        
+                        max-width 332px
+                        width 100%
+
+                        justify-content space-between
+
+                        margin-bottom 32px 
+
+                        li
+                              margin 0
+                              list-style none
+
+                              a
+                                    display flex
+                                    
+                                    svg
+                                          box-shadow 0px 0px 0px 0px #FFF
+                                          transition box-shadow 0.18s linear
+                                                      
+                                          &:hover
+                                                box-shadow 0px 0px 0px 0.8px #FFF                                               
+
+                  button 
+                        max-width 256px
+                        width 100%
+                        
+                        box-sizing border-box
+                        padding 8px 32px
+
+                        background-color #232323
+                        border 1px solid #232323
+                  
+                        font-family Poppins
+                        font-style normal
+                        font-weigh 600
+                        font-size 16px
+                        line-height 24px
+
+                        color #FFF
+
+                        cursor pointer
+
+                        transition 200ms all ease-in-out
+
+                        &:hover 
+                              background-color #FFF 
+                              color #232323
+
+            h2
+                  font-weight 500
+                  font-size 24px
+                  line-height 32px
+
+                  margin-bottom 16px
+
+                  color: #232323
+
+            li
+                  margin 8px 0
+                  list-style none
+                  
+            a
+                  font-weight 400
+                  font-size 16px
+                  line-height 24px
+
+                  text-align justify
+                  text-decoration none
+
+                  color #595959
+
+      &__copy
+            max-width 1720px
+            width 100%
+
+            margin 0 auto 107px auto
+
+            p 
+                  font-family Poppins
+                  font-style normal
+                  font-weight 400
+                  font-size 14px
+                  line-height 22px
+
+                  a 
+                        text-decoration none 
+                 
+
+// ------- Media queries ------- 
+
+@media only screen and (min-width: 1720px)
+      .footer
+            padding 0 15px
+
+@media only screen and (min-width: 1366px) and (max-width 1719px)
+      .footer
+            padding 0 15px
+
+@media only screen and (min-width: 1280px) and (max-width 1365px)
+      .footer
+            padding 0 15px
+
+            &__container
+                  &-ambience
+                        h2 
+                           width 250px  
+
+@media only screen and (min-width: 1200px) and (max-width 1279px)
+      .footer
+            padding 0 15px
+
+            &__container
+                  &-ambience
+                        h2 
+                           width 250px  
+
+@media only screen and (min-width: 900px) and (max-width 1199px)
+      .footer
+            padding 0 15px
+
+            &__container
+                  flex-wrap wrap
+                  justify-content center
+
+                  margin-top 20px
+
+                  &-aboutus
+                        margin-bottom 20px
+
+                        .up
+                              margin-bottom 20px
+
+                        
+                              .vetor-center
+                                    display flex
+                                    justify-content center
+                  
+            &__copy
+                  text-align center
+
+                  margin-top 60px
+
+                  max-width 860px
+                  
+
+@media only screen and (min-width: 320px) and (max-width 899px)
+      .footer
+            padding 0 15px
+
+            &__container
+                  flex-wrap wrap
+                  justify-content center
+
+                  text-align center
+
+                  margin-top 10px
+
+                  &-aboutus
+                        margin-bottom 20px
+                        max-width 450px
+
+                        .up
+                              margin-bottom 20px
+
+                        .vetor-center
+                              display flex
+                              justify-content center
+
+                  &-ambience
+                        margin-bottom 20px
+                        max-width 450px
+
+                  &-blog
+                        margin-bottom 20px
+                        max-width 450px
+
+                  &-social
+                        max-width 450px
+                        
+                        ul
+                              margin: 16px auto 32px auto
+                  
+            &__copy
+                  text-align center
+
+                  margin-top 60px
+
+                  max-width 450px
