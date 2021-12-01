@@ -128,8 +128,9 @@
 
             h2
                   font-weight 500
-                  font-size 1.5rem
-                  line-height 2rem
+                  //font-size 1.5rem
+                  line-height clamp(1.5rem, 1.66vw, 2rem)
+                  font-size clamp(1rem, 1.25vw, 1.5rem)
 
                   margin-bottom 16px
 
@@ -141,8 +142,8 @@
                   
             a
                   font-weight 400
-                  font-size 1rem
-                  line-height 1.5rem
+                  line-height clamp(1.25rem, 1.25vw, 1.5rem)
+                  font-size clamp(0.75rem, 0.83vw, 1rem)
 
                   text-align justify
                   text-decoration none
@@ -159,8 +160,8 @@
                   font-family Poppins
                   font-style normal
                   font-weight 400
-                  font-size 0.875rem
-                  line-height 1.375rem
+                  font-size clamp(0.75rem, 0.73vw, 0.875rem)
+                  line-height clamp(1.25rem, 1.14vw, 1.375rem)
 
                   a 
                         text-decoration none 
@@ -194,12 +195,12 @@
                         h2 
                            width 250px  
 
-@media only screen and (min-width: 900px) and (max-width 1199px)
+@media only screen and (min-width: 850px) and (max-width 1199px)
       .footer
             padding 0 15px
 
             &__container
-                  flex-wrap wrap
+                  //flex-wrap wrap
                   justify-content center
 
                   margin-top 20px
@@ -214,16 +215,67 @@
                               .vetor-center
                                     display flex
                                     justify-content center
+
+            h2 
+                  max-width 190px
+
+            &__copy
+                  //text-align center
+
+                  margin-top 60px
+
+                  max-width 1150px
+                  
+@media only screen and (min-width: 632px) and (max-width 849px)
+      .footer
+            padding 0 15px
+
+            &__container
+                  flex-wrap wrap
+                  justify-content space-between
+
+                  //text-align center
+
+                  margin-top 10px
+
+                  &-aboutus
+                        margin-bottom 20px
+                        max-width 300px
+                        width 100%
+
+                        .up
+                              margin-bottom 20px
+
+                        .vetor-center
+                              display flex
+                              //justify-content center
+
+                  &-ambience
+                        margin-bottom 20px
+                        max-width 300px
+                        width 100%
+
+                  &-blog
+                        margin-bottom 20px
+                        max-width 300px
+                        width 100%
+
+                  &-social
+                        max-width 300px
+                        width 100%
+                        
+                        ul
+                              margin: 16px auto 32px auto
                   
             &__copy
                   text-align center
 
                   margin-top 60px
 
-                  max-width 860px
-                  
+                  max-width 900px
 
-@media only screen and (min-width: 320px) and (max-width 899px)
+
+@media only screen and (min-width: 320px) and (max-width 631px)
       .footer
             padding 0 15px
 
